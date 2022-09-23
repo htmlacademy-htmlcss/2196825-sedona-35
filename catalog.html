@@ -22,5 +22,50 @@
     </header>
     <main class="inner-main">
       <h1 class="inner-title">Гостиницы Седоны</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item"><a class="breadcrumbs-button" href="index.html"><span class="visually-hidden">Главная</span></span> </a> </li>
+        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="">Гостиницы</a> </li>
+      </ul>
+      <h2 class="visually-hidden">Сортировка гостиниц</h2>
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <h3 class="form-title">Инфраструктура:</h3>
+        <label><input type="checkbox" checked name="Бассейн">Бассейн</label>
+        <label><input type="checkbox" checked name="Парковка">Парковка</label>
+        <label><input type="checkbox"  name="Wi-Fi">Wi-Fi</label>
+        <h3 class="form-title">Тип жилья:</h3>
+        <label><input type="radio" name="type-house">Гостиница</label>
+        <label><input type="radio" name="type-house">Мотель</label>
+        <label><input type="radio" name="type-house">Апартаменты</label>
+        <h3 class="form-title">Стоимость, ₽:</h3>
+        <input type="number" name="min" value="0">
+        <input type="number" name="max" value="9000">
+        <input type="submit" value="Применить">
+        <input type="submit" value="Сбросить">
+
+      </form>
+
     </main>
+    <section class="filter">
+      <h2 class="search-title">Найдено гостиниц: 38</h2>
+      <select class="filter-list" aria-label="сортировка">
+        <option value="cheap">Сначала дешевые</option>
+        <option value="cheap">Сначала популярные</option>
+        <option value="cheap">Сначала дорогие</option>
+      </select>
+      <ul class="display-mod">
+        <h3 class="visually-hidden">Способы отображения</h3>
+        <li class="display-item"><a class="display-button"><span class="visually-hidden">Сетка</span></a></li>
+        <li class="display-item"><a class="display-button"><span class="visually-hidden">Слайд</span></a></li>
+        <li class="display-item"><a class="display-button"><span class="visually-hidden">Список</span></a></li>
+      </ul>
+      <ul class="hotel-list">
+        <li class="hotel-item">
+          <img class="hotel-img" src="" alt="Постер гостиницы Amara Resort & Spa">
+          <p class="type-info">Гостиница</p>
+          <p class="price-info">От 4000 ₽</p>
+          <a class="button-info"><span class="button-info-text">подробнее</span></a>
+          <a class="button-favourites"><span class="button-info-favourites">в избранное</span></a>
+        </li>
+      </ul>
+    </section>
   </body>
