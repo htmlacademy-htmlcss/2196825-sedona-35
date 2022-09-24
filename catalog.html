@@ -5,37 +5,36 @@
     <title>Каталог гостиниц Седоны</title>
   </head>
   <body>
-    <header>
-      <nav class="main-page-navigation">
-        <a class="logo-link" href="index.html">
-          <img class="logo" src="#" width="138" height="64" alt="Логотип">
+    <header class="header">
+      <nav class="header-menu menu">
+        <a class="logo-link">
+          <img src="#" width="138" height="64" alt="Логотип">
         </a>
-        <ul class="main-navigation list-reset">
-          <li class="main-navigation-list">
-            <a href="index.html">Главная</a></li>
-          <li class="main-navigation-list"><a href="">О седоне</a>
+        <ul class="menu-list list-reset">
+          <li class="menu-item">
+            <a class="menu-link">Главная</a>
           </li>
-          <li class="main-navigation-list current">
-            <a href="catalog.html">Гостиницы</a>
+          <li class="menu-item">
+            <a class="menu-link" href="">О седоне</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link menu-link-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="main-navigation-button list-reset">
-          <li class="main-navigation-item">
-            <button class="search">
+        <ul class="menu-list menu-user-list list-reset">
+          <li class="menu-user-item">
+            <a href="#" class="menu-user-link menu-user-link-search">
               <span class="visually-hidden">Поиск</span>
-            </button>
+            </a>
           </li>
-          <li class="main-navigation-item">
-            <button class="like">
+          <li class="menu-user-item">
+            <a href="#" class="menu-user-link menu-user-link-favorites">
               <span class="visually-hidden">Поставить Like</span>
-            </button>
-          </li>
-          <li class="main-navigation-item">
-            <a class="button menu-button button-brown" href="catalog.html">
-              <span class="text-button">Хочу сюда!</span>
+              <span class="menu-user-link-favorites-num">12</span>
             </a>
           </li>
         </ul>
+        <a class="button menu-button button-brown" href="#">Хочу сюда!</a>
       </nav>
     </header>
     <main class="catalog-main">
@@ -275,3 +274,4 @@
       </a>
      </footer>
   </body>
+</html>

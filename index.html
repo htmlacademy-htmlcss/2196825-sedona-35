@@ -8,7 +8,7 @@
     <header class="header">
       <nav class="header-menu menu">
         <a class="logo-link">
-          <img class="menu-logo" src="#" width="138" height="64" alt="Логотип">
+          <img src="#" width="138" height="64" alt="Логотип">
         </a>
         <ul class="menu-list list-reset">
           <li class="menu-item">
@@ -114,21 +114,21 @@
         </ul>
       </section>
 
-        <section class="hotel-search">
+        <section class="search">
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-          <h3 class="search-title"><strong>Заинтересовались?</strong></h3>
+          <h3 class="search-title">Заинтересовались?</h3>
           <p class="text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="button-search button-brown" href="catalog.html">
             <span class="text-button">Поиск гостиницы в Седоне!</span>
           </a>
         </section>
-        <section class="subscribe">
-          <h2 class="visually-hidden">Рассылка</h2>
-          <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+        <section class="subscribe subscribe-home">
+          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscribe-input" type="email" name="user_e-mail" value="Ваш e-mail">
-            <input class="button-blue button-subscribe" type="submit" value="Подписаться">
+            <label class="visually-hidden" for="email">Ваш e-mail</label>
+            <input class="subscribe-input" type="email" name="email" id="email" placeholder="Ваш e-mail">
+            <button class="button button-blue button-subscribe" type="submit">"Подписаться"</button>
           </form>
 
         </section>
