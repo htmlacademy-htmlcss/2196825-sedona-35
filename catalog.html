@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Каталог гостиниц Седоны</title>
   </head>
   <body>
     <header>
@@ -20,27 +20,67 @@
         </ul>
       </nav>
     </header>
-    <main class="inner-main">
-      <h1 class="inner-title">Гостиницы Седоны</h1>
+    <main class="catalog-main">
+      <h1 class="catalog-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item"><a class="breadcrumbs-button" href="index.html"><span class="visually-hidden">Главная</span></a> </li>
-        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="">Гостиницы</a> </li>
+        <li class="breadcrumbs-item"><a class="breadcrumbs-link">Гостиницы</a> </li>
       </ul>
       <h2 class="visually-hidden">Сортировка гостиниц</h2>
       <form action="https://echo.htmlacademy.ru/" method="post">
-        <h3 class="form-title">Инфраструктура:</h3>
-        <label><input type="checkbox" checked name="Бассейн">Бассейн</label>
-        <label><input type="checkbox" checked name="Парковка">Парковка</label>
-        <label><input type="checkbox"  name="Wi-Fi">Wi-Fi</label>
-        <h3 class="form-title">Тип жилья:</h3>
-        <label><input type="radio" name="type-house">Гостиница</label>
-        <label><input type="radio" name="type-house">Мотель</label>
-        <label><input type="radio" name="type-house">Апартаменты</label>
-        <h3 class="form-title">Стоимость, ₽:</h3>
-        <input type="number" name="min" value="0">
-        <input type="number" name="max" value="9000">
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Инфраструктура:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label>
+                <input type="checkbox" checked name="Бассейн">Бассейн
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label>
+                <input type="checkbox" checked name="Парковка">Парковка
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label>
+                <input type="checkbox"  name="Wi-Fi">Wi-Fi
+              </label>
+             </li>
+          </ul>
+        </fieldset>
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Тип жилья:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label>
+                <input type="radio" name="type-house">Гостиница
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label>
+                <input type="radio" name="type-house">Мотель
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label>
+                <input type="radio" name="type-house">Апартаменты
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <input type="number" name="min" value="0">
+            </li>
+            <li class="catalog-filter-item"><input type="number" name="max" value="9000">
+            </li>
+          </ul>
+        </fieldset>
         <input type="submit" value="Применить">
         <input type="submit" value="Сбросить">
+
 
       </form>
 
