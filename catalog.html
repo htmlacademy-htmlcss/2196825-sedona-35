@@ -7,8 +7,8 @@
   <body>
     <header class="header">
       <nav class="header-menu menu">
-        <a class="logo-link">
-          <img src="#" width="138" height="64" alt="Логотип">
+        <a class="logo-link" href="index.html">
+          <img src="image/svg/logo.svg" width="140" height="70" alt="Логотип">
         </a>
         <ul class="menu-list list-reset">
           <li class="menu-item">
@@ -88,20 +88,26 @@
         </fieldset>
         <fieldset class="filter-group filter-group-range">
           <legend class="filter-title">Стоимость, ₽:</legend>
-          <ul class="filter-list list-reset">
-            <li class="filter-item">
-              <div class="prise-filter">
-                <label>
-                  <input class="input-range form-input" type="number" name="min" value="0">от</label>
-                <label>
-                  <input class="input-rage form-input" type="number" name="max" value="9000">до</label>
-              </div>
-            </li>
-          </ul>
-        </fieldset>
-        <div class="button button-filter">
-        <input class="button button-blue button-submit" type="submit" value="Применить">
-        <input class="button button-reset" type="reset" value="Сбросить">
+        <div class="filter-range-container">
+          <div class="filter-range-change">
+            <div class="filter-range-item">
+              <input class="filter-range-input filter-range-input-min" type="number" name="min-price" id="min" value="0" min="0" max="9000">
+              <label for="min">от</label>
+            </div>
+            <div class="filter-range-item">
+              <input class="filter-range-input filter-range-input-max" type="number" name="max-price" id="max" value="9000" min="0" max="9000">
+              <label for="max">до</label>
+            </div>
+          </div>
+          <div class="filter-toggle">
+            <button class="filter-toggle-item filter-toggle-item-min" type="button" aria-label="Изменить минимальную цену"></button>
+            <button class="filter-toggle-item filter-toggle-item-max" type="button" aria-label="Изменить максимальную цену"></button>
+          </div>
+        </div>
+      </fieldset>
+        <div class="filter-button">
+          <button class="button button-blue filter-submit" type="submit">Применить</button>
+          <button class="button button-transparent filter-reset" type="reset">Сбросить</button>
         </div>
       </form>
       </section>
@@ -128,7 +134,7 @@
         <ul class="hotel-list">
           <li class="hotels-item">
             <a class="hotels-img" href="#">
-              <img src="img/hotel-1.jpg" alt="Amara Resort & Spa" width="180" height="120">
+              <img src="image/catalog/amara-resort.jpg" alt="Amara Resort & Spa" width="180" height="120">
             </a>
             <div class="hotels-descript">
               <h2 class="hotels-title">Amara Resort & Spa</h2>
@@ -147,7 +153,7 @@
           </li>
           <li class="hotels-item">
             <a class="hotels-img" href="#">
-              <img src="img/hotel-1.jpg" alt="Villas at Poco Diablo" width="180" height="120">
+              <img src="image/catalog/villas-at-poco-diablo.jpg" alt="Villas at Poco Diablo" width="180" height="120">
             </a>
             <div class="hotels-descript">
               <h2 class="hotels-title">Villas at Poco Diablo</h2>
@@ -166,7 +172,7 @@
           </li>
           <li class="hotels-item">
             <a class="hotels-img" href="#">
-              <img src="img/hotel-1.jpg" alt="Desert Quail Inn" width="180" height="120">
+              <img src="image/catalog/desert-quail.jpg" alt="Desert Quail Inn" width="180" height="120">
             </a>
             <div class="hotels-descript">
               <h2 class="hotels-title">Desert Quail Inn</h2>
@@ -184,7 +190,7 @@
           </li>
           <li class="hotels-item">
             <a class="hotels-img" href="#">
-              <img src="img/hotel-1.jpg" alt="GreenTree Inn" width="180" height="120">
+              <img src="image/catalog/greentree-inn.jpg" alt="GreenTree Inn" width="180" height="120">
             </a>
             <div class="hotels-descript">
               <h2 class="hotels-title">GreenTree Inn</h2>
@@ -203,34 +209,22 @@
 
       <ul class="pagination list-reset">
         <li class="pagination-item">
-          <a class="pagination-link pagination-link-current">
-            <span class="pagination-text">1</span>
-          </a>
+          <a class="pagination-link pagination-link-current">1</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link">
-            <span class="pagination-text">2</span>
-          </a>
+          <a class="pagination-link">2</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link">
-            <span class="pagination-text">3</span>
-          </a>
+          <a class="pagination-link">3</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link">
-            <span class="pagination-text">4</span>
-          </a>
+          <a class="pagination-link">4</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-link-more">
-            <span class="pagination-text">...</span>
-          </a>
+          <a class="pagination-link pagination-link-more">...</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link">
-            <span class="pagination-text">10</span>
-          </a>
+          <a class="pagination-link">10</a>
         </li>
       </ul>
     </section>
@@ -265,7 +259,7 @@
       </ul>
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="footer-logo" href="https://htmlacademy.ru">
-        <img class="logo-academy" src="#" width="115" height="33" alt="лого академии">
+        <img class="logo-academy" src="image/svg/logo-htmlacademy.svg" width="115" height="33" alt="лого академии">
         <span class="visually-hidden">Логотип HTMLAcademy</span>
       </a>
      </footer>
