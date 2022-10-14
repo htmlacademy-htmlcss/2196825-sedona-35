@@ -21,6 +21,14 @@ body{
   background: #fff;
   color: #333333;
 }
+.button-blue{
+  background-color: #82B3D3;
+}
+.button-brown{
+  background: #756157;
+}
+
+
 .visually-hidden{
   visibility: hidden;
 }
@@ -106,6 +114,8 @@ body{
 }
 .subscribe-home{
   background-image: url(../image/background-subscribe.jpg);
+  width: 1200px;
+  height: 414.86px;
   background-repeat: no-repeat;
 }
 .subscribe-home h2{
@@ -120,4 +130,90 @@ body{
   color: #fff;
   text-align: center;
 }
+.footer-phone{
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+.filter{
+  background-image: url(../image/background-filter.jpg);
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.breadcrumbs-link{
+  font-size: 16px;
+  line-height: 21px;
 
+}
+.filter-title{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.filter-control{
+  font-size: 18px;
+  line-height: 23px;
+}
+.sorting-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.hotels-descript{
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+}
+.hotels-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.hotels-type, .hotels-price{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.hotels-button{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.hotels-button-more{
+  color: #fff;
+  background: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.hotels-favorites{
+  text-transform: uppercase;
+  color: #fff;
+}
+.hotels-favorites-current{
+  background: #7DB54F;
+}
+
+.hotels-rating-star span{
+  background-image: url(../image/star-icon.svg);
+  background-repeat: no-repeat;
+}
+.pagination-link{
+  border-radius: 4px;
+  background: #82B3D3;
+}
+.pagination-link-current{
+  background: #F2F2F2;
+}
+.pagination-link-more{
+  background: #F2F2F2;
+}
+.button-subscribe{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color:#fff
+}
