@@ -323,7 +323,6 @@ img {
 
 .footer {
   display: grid;
-  -webkit-box-align: center;
   align-items: center;
   padding-top: 45px;
   padding-bottom: 35px;
