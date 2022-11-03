@@ -251,12 +251,13 @@ img {
 }
 
 .search {
-  align-items: center;
   min-height: 406px;
   padding-top: 96px;
 }
 
 .search-title {
+  align-items: center;
+
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -268,6 +269,7 @@ img {
 }
 
 .button-search {
+  display: block;
   width: 376px;
   height: 52px;
   margin-top: 54px;
